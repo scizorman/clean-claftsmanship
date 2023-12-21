@@ -1,7 +1,9 @@
 package clean.craftsmanship.stack
 
 class Stack {
-    private var size = 0
+    var size = 0
+        private set
+
     private var elements: MutableList<Int> = mutableListOf()
 
     fun isEmpty() = size == 0
@@ -14,8 +16,6 @@ class Stack {
         if (size == 0) throw Underflow()
         return elements[--size]
     }
-
-    fun getSize() = size
 }
 
 class Underflow : RuntimeException()
