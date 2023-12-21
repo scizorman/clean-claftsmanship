@@ -1,6 +1,6 @@
 package clean.craftsmanship.stack
 
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
 class StackTest {
     @Test
